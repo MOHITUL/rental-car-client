@@ -6,12 +6,12 @@ import { Link } from 'react-router';
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false)
     return (
-        <div className='min-h-screen flex items-center justify-center p-4'>
-            <div className='w-full max-w-md'>
+        <div className='min-h-screen flex items-center justify-center p-4 '>
+            <div className='w-full max-w-md '>
                 <div className='bg-white rounded-2xl shadow-xl p-8'>
                     <div className='text-center mb-8'>
-                        <div className='inline-flex items-center justify-center w-15 h-15 rounded-full mb-4'>
-                            <User />
+                        <div className='inline-flex items-center justify-center w-18 h-18 rounded-full mb-4 bg-slate-900'>
+                            <User className='w-15 h-15 text-white'/>
                         </div>
                         <h1 className='text-3xl font-bold text-gray-800 mb-2'>Create Account</h1>
                         <p className='text-gray-600'>Join us today and get started</p>

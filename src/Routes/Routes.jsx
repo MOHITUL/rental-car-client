@@ -7,6 +7,7 @@ import MyBookings from "../Pages/MyBookings";
 import BrowseCars from "../Pages/BrowseCars";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
+import NotFound from "../Pages/NotFound";
 
 
 
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element:<MainLayout/>,
+        errorElement:<NotFound/>,
         children: [
             {
                 index:true,

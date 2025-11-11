@@ -27,8 +27,8 @@ const WhyRent = () => {
     return (
         <div className='py-16 bg-gray-100'>
             <div className='max-w-7xl mx-auto px-6 text-center'>
-                <h2 className='text-4xl font-bold mb-4 text-gray-900'>Why Rent With Us</h2>
-                <p className='text-gray-600 max-w-2xl mx-auto mb-12'>We make your journey easier, safer, and more enjoyable with premium service and unbeatable value.</p>
+                <h2 className='text-4xl font-bold mb-4 text-slate-900'>Why Rent With Us</h2>
+                <p className='text-gray-600 max-w-3xl mx-auto mb-12'>We make your journey easier, safer, and more enjoyable with premium service and unbeatable value.</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {

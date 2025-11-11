@@ -13,7 +13,7 @@ const Navbar = () => {
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         {/* small device */}
-                        <li> <NavLink to={'/'}>Home</NavLink> </li>
+                        <li> <NavLink to={'/'} >Home</NavLink> </li>
                         <li>
                             <NavLink to={'/add-car'}>
                                 Add Car
@@ -25,27 +25,27 @@ const Navbar = () => {
                         
                     </ul>
                 </div>
-                <Link className="btn btn-ghost text-xl">DriveNow</Link>
+                <Link className="btn btn-ghost text-3xl font-bold text-slate-900 ">DriveNow</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {/* Large device */}
-                    <li> <NavLink to={'/'}>Home</NavLink> </li>
+                    <li> <NavLink to={'/'} className='text-xl'>Home</NavLink> </li>
                     <li>
-                        <NavLink to={'/add-car'}>
+                        <NavLink to={'/add-car'} className='text-xl'>
                             Add Car
                         </NavLink>
                     </li>
-                    <li> <NavLink to={'/my-listings'}> My Listings </NavLink> </li>
-                    <li> <NavLink to={'/my-bookings'}> My Bookings </NavLink> </li>
-                    <li> <NavLink to={'/browse-cars'}> Browse Cars </NavLink> </li>
+                    <li> <NavLink to={'/my-listings'} className='text-xl'> My Listings </NavLink> </li>
+                    <li> <NavLink to={'/my-bookings'} className='text-xl'> My Bookings </NavLink> </li>
+                    <li> <NavLink to={'/browse-cars'} className='text-xl'> Browse Cars </NavLink> </li>
 
                 </ul>
             </div>
             <div className="navbar-end gap-3 ">
-                <NavLink to={'/login'} >
+                <NavLink to={'/login'} className='text-xl'>
                     LogIn </NavLink>
-                <NavLink to={'/signup'}> SignUp </NavLink>
+                <NavLink to={'/signup'} className='text-xl'> SignUp </NavLink>
             </div>
         </div>
     );

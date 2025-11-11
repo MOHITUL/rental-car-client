@@ -53,7 +53,7 @@ const SignUp = () => {
             const user = userCredential.user;
 
             await updateProfile (user, {
-                display: name,
+                displayName: name,
                 photoURL: photoURL || ''
             });
             toast.success('Account created successfully');

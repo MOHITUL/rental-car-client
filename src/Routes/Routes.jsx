@@ -8,6 +8,7 @@ import BrowseCars from "../Pages/BrowseCars";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
 import NotFound from "../Pages/NotFound";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -23,7 +24,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/add-car',
-                element: <AddCar/>,
+                element: (
+                    <PrivateRoute>
+                        <AddCar/>
+                    </PrivateRoute>
+                ),
             },
             {
                 path: '/my-listings',

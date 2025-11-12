@@ -16,18 +16,18 @@ import CarDetails from "../Pages/CarDetails";
 export const router = createBrowserRouter([
     {
         path: '/',
-        element:<MainLayout/>,
-        errorElement:<NotFound/>,
+        element: <MainLayout />,
+        errorElement: <NotFound />,
         children: [
             {
-                index:true,
-                element: <Homepage/>,
+                index: true,
+                element: <Homepage />,
             },
             {
                 path: '/add-car',
                 element: (
                     <PrivateRoute>
-                        <AddCar/>
+                        <AddCar />
                     </PrivateRoute>
                 ),
             },
@@ -35,29 +35,31 @@ export const router = createBrowserRouter([
                 path: '/cars/:id',
                 element: (
                     <PrivateRoute>
-                        <CarDetails/>
+                        <CarDetails />
                     </PrivateRoute>
                 ),
             },
             {
                 path: '/my-listings',
-                element: <MyListings/>,
+                element: (<PrivateRoute>
+                    <MyListings />
+                </PrivateRoute>),
             },
             {
                 path: '/my-bookings',
-                element: <MyBookings/>,
+                element: <MyBookings />,
             },
             {
                 path: '/browse-cars',
-                element: <BrowseCars/>,
+                element: <BrowseCars />,
             },
             {
                 path: '/login',
-                element: <Login/>,
+                element: <Login />,
             },
             {
                 path: '/signup',
-                element: <SignUp/>,
+                element: <SignUp />,
             },
         ]
     }

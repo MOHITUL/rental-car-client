@@ -18,11 +18,11 @@ const BrowseCars = () => {
                 {
                     cars.map(car => (
                         <div key={car._id} className='bg-white shadow-lg p-5'>
-                            <img src={car.imageUrl} alt="{car.carName}"
+                            <img src={car.imageUrl} alt={car.carName}
                                 className='rounded-lg h-80 w-full object-cover' />
-                            <h3 className='text-xl font-semibold mt-3'>{car.carName}</h3>
+                            <h3 className='text-2xl font-semibold mt-3'>{car.carName}</h3>
                             <p className='text-gray-600'>Category:{car.category}</p>
-                            <p className='text-gray-700 font-medium'>Rent: ${car.rentPrice}/day</p>
+                            <p className='text-gray-700 font-medium'>Rent: TK{car.rentPrice}/day</p>
                             <p className='text-sm text-gray-500'>Location:{car.location}</p>
 
                             <div className='mt-4'>

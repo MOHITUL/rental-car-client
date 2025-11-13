@@ -4,6 +4,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { Link } from 'react-router';
 
 const HeroSlider = () => {
   return (
@@ -38,9 +39,9 @@ const HeroSlider = () => {
               <p className="text-lg mb-6">
                 Choose from luxury sedans, sporty convertibles, and family SUVs — all at unbeatable prices.
               </p>
-              <button className="bg-yellow-500 text-black px-6 py-3 font-semibold rounded-md hover:bg-yellow-400 transition">
+              <Link to={'/browse-cars'} className="bg-yellow-500 text-black px-6 py-3 font-semibold rounded-md hover:bg-yellow-400 transition">
                 Book Now
-              </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -61,9 +62,9 @@ const HeroSlider = () => {
               <p className="text-lg mb-6">
                 Enjoy flexible rental options, 24/7 customer support, and free pick-up & drop-off.
               </p>
-              <button className="bg-yellow-500 text-black px-6 py-3 font-semibold rounded-md hover:bg-yellow-400 transition">
+              <Link to={'/browse-cars'} className="bg-yellow-500 text-black px-6 py-3 font-semibold rounded-md hover:bg-yellow-400 transition">
                 View Pricing
-              </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -84,9 +85,9 @@ const HeroSlider = () => {
               <p className="text-lg mb-6">
                 Every car is sanitized and inspected before each trip — your safety is our top priority.
               </p>
-              <button className="bg-yellow-500 text-black px-6 py-3 font-semibold rounded-md hover:bg-yellow-400 transition">
+              <Link to={'/browse-cars'} className="bg-yellow-500 text-black px-6 py-3 font-semibold rounded-md hover:bg-yellow-400 transition">
                 Explore Fleet
-              </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>

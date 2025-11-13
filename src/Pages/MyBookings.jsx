@@ -13,7 +13,7 @@ export default function MyBookings() {
     fetch(`http://localhost:3000/bookings?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
-        setBookedCars(data);
+        setBookedCars(data);  
         setLoading(false);
       })
       .catch((err) => {

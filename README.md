@@ -23,6 +23,9 @@ Tech Stack
 - React.js for the frontend  
 - Tailwind CSS for styling  
 - Fetch API for client-server communication  
--
+- Firebase for authentication
+- Swiperslide for slider
+- Lucide-react & react-icon for icons
+- Toastify & sweetalert for alert
 
 

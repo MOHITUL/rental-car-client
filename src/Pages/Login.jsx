@@ -128,7 +128,7 @@ const Login = () => {
                         <button
                             type="submit"
 
-                            className="w-full py-3 rounded-lg font-semibold  transition-all  cursor-pointer shadow-lg hover:shadow-xl"
+                            className="block w-full text-center bg-linear-to-r from-slate-900 to-slate-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-600 hover:to-blue-500 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
                         >
                             SignIn
                         </button>
@@ -145,7 +145,7 @@ const Login = () => {
                     {/* Google */}
                     <button
                     onClick={handleGoogleLogin}
-                    className="btn w-full mt-3 border-none font-semibold text-sm shadow-md ">
+                    className="btn w-full mt-3 border-none font-semibold text-sm shadow-md bg-linear-to-r from-slate-900 to-slate-700 text-white rounded-xl">
                         <FcGoogle className="text-2xl" />
                         Continue with Google
                     </button>

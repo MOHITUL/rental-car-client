@@ -175,8 +175,7 @@ const SignUp = () => {
                         {/* submit button */}
                         <button
                         type='submit'
-                        className='w-full font-semibold py-3 rounded-lg hover:from-blue-600 
-              hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md'>
+                        className='block w-full text-center bg-linear-to-r from-slate-900 to-slate-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-600 hover:to-blue-500 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer'>
                             Create Account
                         </button>
                     </form>
@@ -189,7 +188,7 @@ const SignUp = () => {
                     {/* Google */}
                     <button
                     onClick={handleGoogleSignUp}
-                    className="btn w-full mt-3 border-none font-semibold text-sm shadow-md ">
+                    className="btn w-full mt-3 border-none font-semibold text-sm shadow-md bg-linear-to-r from-slate-900 to-slate-700 text-white rounded-xl ">
                         <FcGoogle className="text-2xl" />
                         Continue with Google
                     </button>

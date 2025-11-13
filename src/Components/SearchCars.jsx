@@ -8,7 +8,7 @@ const SearchCars = ({ setCars }) => {
     if (!searchTerm) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/search?name=${searchTerm}`);
+      const res = await fetch(`https://car-rental-server-psi-three.vercel.app/search?name=${searchTerm}`);
       const data = await res.json();
       setCars(data); 
     } catch (error) {

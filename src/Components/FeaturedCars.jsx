@@ -6,7 +6,7 @@ const FeaturedCars = () => {
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/featured")
+    fetch("https://car-rental-server-psi-three.vercel.app/featured")
       .then((res) => res.json())
       .then((data) => setCars(data))
       .catch((err) => console.error(err));

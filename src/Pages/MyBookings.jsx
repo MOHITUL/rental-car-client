@@ -10,7 +10,7 @@ export default function MyBookings() {
   useEffect(() => {
     if (!user?.email) return;
 
-    fetch(`http://localhost:3000/bookings?email=${user.email}`)
+    fetch(`https://car-rental-server-psi-three.vercel.app/bookings?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setBookedCars(data);  

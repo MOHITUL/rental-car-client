@@ -13,7 +13,7 @@ const MyListings = () => {
   // fetch provider cars
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:3000/my-listings?email=${user.email}`)
+      fetch(`https://car-rental-server-psi-three.vercel.app/my-listings?email=${user.email}`)
         .then((res) => res.json())
         .then((data) => {
           setCars(data);
@@ -40,7 +40,7 @@ const handleDelete = async (id) => {
   if (!result.isConfirmed) return;
 
   try {
-    const res = await fetch(`http://localhost:3000/cars/${id}`, {
+    const res = await fetch(`https://car-rental-server-psi-three.vercel.app/cars/${id}`, {
       method: "DELETE",
     });
     const data = await res.json();
@@ -76,7 +76,7 @@ const handleDelete = async (id) => {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/cars/${selectedCar._id}`,
+        `https://car-rental-server-psi-three.vercel.app/cars/${selectedCar._id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -163,7 +163,7 @@ const handleDelete = async (id) => {
         </div>
       )}
 
-      {/* 🔵 Update Modal */}
+      {/* Update Modal */}
       {selectedCar && (
         <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
           <div className="bg-white rounded-2xl p-8 w-full max-w-lg relative shadow-xl">

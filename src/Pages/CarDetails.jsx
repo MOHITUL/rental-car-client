@@ -13,7 +13,7 @@ const CarDetails = () => {
 
     // car details
     useEffect(() => {
-        fetch(`http://localhost:3000/cars/${id}`)
+        fetch(`https://car-rental-server-psi-three.vercel.app/cars/${id}`)
             .then(res => res.json())
             .then(data => setCar(data))
             .catch(err => console.error(err));
@@ -34,7 +34,7 @@ const CarDetails = () => {
 
   try {
     setLoading(true);
-    const res = await fetch(`http://localhost:3000/cars/${id}/book`, {
+    const res = await fetch(`https://car-rental-server-psi-three.vercel.app/cars/${id}/book`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -60,14 +60,7 @@ const CarDetails = () => {
 };
 
 
-    if (!car) return (
-        <div className='min-h-screen flex items-center justify-center'>
-            <div className='text-center'>
-                <div className='w-16 h-16 border-4 border-slate-900 border-t-transparent rounded-full animate-spin mx-auto mb-4'></div>
-                <p className='text-xl text-gray-600'>Loading...</p>
-            </div>
-        </div>
-    );
+    
 
     return (
         <div className='min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 flex justify-center p-6'>

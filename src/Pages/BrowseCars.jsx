@@ -5,7 +5,7 @@ const BrowseCars = () => {
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/cars")
+        fetch("https://car-rental-server-psi-three.vercel.app/cars")
             .then(res => res.json())
             .then(data => setCars(data))
             .catch(err => console.error("Error fetching cars:", err));

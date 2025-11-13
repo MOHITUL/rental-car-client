@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin,  Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin} from 'lucide-react';
 import {  FaXTwitter,FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 

@@ -27,7 +27,7 @@ const AddCar = () => {
             providerEmail: user.email,
         };
         try {
-            const res = await fetch("http://localhost:3000/cars", {
+            const res = await fetch("https://car-rental-server-psi-three.vercel.app/cars", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

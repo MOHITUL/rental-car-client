@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { DollarSign, Car, User } from "lucide-react";
+import SearchCars from "./SearchCars";
 
 const FeaturedCars = () => {
   const [cars, setCars] = useState([]);
@@ -14,9 +15,13 @@ const FeaturedCars = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
+
+        
       <h2 className="text-4xl font-bold text-center mb-10 text-gray-900">
         Featured Cars
       </h2>
+
+      <SearchCars setCars={setCars}/>
 
       {cars.length === 0 ? (
         <p className="text-center text-gray-500 text-lg">Loading cars...</p>
